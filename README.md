@@ -25,7 +25,7 @@ These simple rules lead to a rich variety of behaviors and patterns, some of whi
 
 You can play Conway's Game of Life by visiting the following link:
 
-[Play Conway's Game of Life](http://www.example.com)
+[Play Conway's Game of Life](https://conways-game-of-life-by-debyte.vercel.app/)
 
 ## Screenshots 📸
 
