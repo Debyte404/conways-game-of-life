@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+        --cell_size: 8px;
+        --gap: 1px;
+        --margin: 8px;
+        --margin2x : 16px
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a; /* Very dark gray background */
+
+        }
+        .grid-container {
+            display: grid;
+            gap: var(--gap); /* Gap between cells */
+            width: calc(100vw - var(--margin2x)); /* Full width minus 8px margin on each side */
+            height: calc(100vh - var(--margin2x)); /* Full height minus 8px margin on each side */
+            grid-template-columns: repeat(auto-fill, var(--cell_size));
+            grid-template-rows: repeat(auto-fill, var(--cell_size));
+            padding: var(--margin); /* Margin around the grid */
+            background-color: rgb(43, 43, 43);
+            
+        }
+        .grid-item {
+            width: var(--cell_size);
+            height: var(--cell_size);
+            background-color: black; /* Default cell color */
+             
+        }
+        .grid-item.alive {
+            background-color: white; /* Alive cell color */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container" id="grid"></div>
+
+    <div class="floating-panel" id="floatingPanel">
+        <button id="startButton">Start</button>
+        <button id="clearButton">Clear</button>
+    </div>
+    <button class="minimize-button" id="minimizeButton">></button>
+
+
+    <script src="logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.floating-panel {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    transition: right 0.3s ease;
+}
+.floating-panel.minimized {
+    right: -100px; /* Adjust based on the width of the panel */
+}
+.floating-panel button {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.floating-panel button:hover {
+    background-color: #777;
+}
+.minimize-button {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #555;
+    opacity: 0.8;
+    color: white;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: right 0.3s ease;
+}
+.minimize-button:hover {
+    background-color: #777;
+    opacity: 0.9;
+}
