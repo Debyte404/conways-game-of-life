@@ -31,8 +31,8 @@ You can play Conway's Game of Life by visiting the following link:
 
 Here are some screenshots of the game in action:
 
-![Screenshot 1](https://via.placeholder.com/400x300)
-![Screenshot 2](https://via.placeholder.com/400x300)
+![Screenshot 1](repo_det/conway1.png)
+![Screenshot 2](repo_det/conway2.png)
 
 ## Getting Started 🚀
 
